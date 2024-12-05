@@ -21,6 +21,7 @@ template.innerHTML = `
 </nav>
 `
 
+// autonomous web components
 class customElement extends HTMLElement{
     constructor(){
         super()
