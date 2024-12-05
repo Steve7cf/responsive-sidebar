@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="stephan bazaar">
+    <title>Custom Web Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Custom Web Components</h1>
+    </header>
+
+    <custom-element>
+        <div slot="logo" class="logo">darkCoder</div>
+        <ul slot="links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Community</li>
+            <li>Forums</li>
+        </ul>
+        <div slot="btn" class="btn">
+            <button>Signup</button>
+        </div>
+    </custom-element>
+    <script defer src="main.js"></script>
+</body>
+</html>
