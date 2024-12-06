@@ -72,7 +72,6 @@ nav div button:hover{
 /* main */
 main{
     max-width: 100%;
-    background-color: red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -83,10 +82,19 @@ main .hero--img img{
     width: 100px;
 }
 
+.hero--intro button{
+    width: 15rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: #ebeef1;
+}
 /* small devices in portrait mode */
 @media only screen and (max-width:600px){
     body{
-        background-color: cyan;
+        background-color: #ebeef1;
         padding: 1rem;
     }
     ul{
@@ -96,10 +104,12 @@ main .hero--img img{
     ul li{
         display: none;
     }
+    nav div button{
+        display: none;
+    }
 
     main{
         max-width: 100%;
-        background-color: red;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -118,7 +128,6 @@ main .hero--img img{
     }
     .hero--intro h1{
         width: 100%;
-        background-color: cyan;
         font-size: 2rem;
         margin-inline: auto;
         display: flex;
@@ -150,3 +159,41 @@ main .hero--img img{
         display: none;
     }
 } */
+
+@media only screen and (min-width:600px){
+    body{
+        background-color: #ebeef1;
+        padding: 1rem;
+    }
+    ul li{
+        display: none;
+    }
+    main{
+        margin-top: 1rem;
+    }
+    .hero--intro{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero--intro p{
+        font-size: 1.2rem;
+    }
+    .hero--intro h1{
+        width: 100%;
+        font-size: 2rem;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .hero--img{
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
