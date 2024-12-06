@@ -8,23 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Custom Web Components</h1>
-    </header>
-
-    <custom-element>
-        <div slot="logo" class="logo">darkCoder</div>
-        <ul slot="links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contacts</li>
-            <li>Community</li>
-            <li>Forums</li>
+    <header>                 
+    <nav>
+        <div class="logo"><h3>darkCoder <img src="assets/code.svg" alt=""></h3></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contacts</a></li>
         </ul>
-        <div slot="btn" class="btn">
-            <button>Signup</button>
+        <div>
+            <button>signup</button>
         </div>
-    </custom-element>
+    </nav>
+</header>
+<main>
+    <div class="hero--intro">
+        <h1>Where Innovation Arise</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Soluta culpa voluptatem odio quasi, quis tempora molesti
+             ae ipsa at recusandae? Laboriosam cupiditate quam cum cor
+             rupti distinctio excepturi saepe labore dignissimos voluptatibus.
+        </p>
+        <button>Get started</button>
+    </div>
+    <div class="hero--img">
+        <img src="assets/hero-image.jpg" alt="hero image">
+    </div>
+</main>
+<footer>
+    footer goes here
+</footer>
     <script defer src="main.js"></script>
 </body>
 </html>

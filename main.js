@@ -12,6 +12,7 @@ template.innerHTML = `
         box-shadow:0px 0px 10px rgba(0,0,0,0.16);
         height:100px;
         padding:0.4rem;
+        width:100%;
     }
 </style>
 <nav class="navbar">
