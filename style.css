@@ -64,6 +64,7 @@ aside nav a{
     gap: 12px;
     padding: 12px 15px;
     align-items: center;
+    white-space: nowrap;
 }
 aside nav ul{
     list-style: none;
@@ -80,6 +81,7 @@ aside nav ul li{
 aside nav ul li:hover{
     background-color: #232b49;
     border-radius: 0.5rem;
+    transition: .4s  ease;
 }
 
 .secondary--nav{
@@ -104,6 +106,60 @@ aside nav ul li:hover{
 .collapsed .btn-icon{
     transform: rotate(180deg);
 }
+
+aside nav ul li:hover .nav-tooltip{
+    opacity: 1;
+    transition: .4s  ease;
+}
+aside nav ul li{
+    position: relative;
+}
+aside nav ul li .nav-tooltip{
+    display: none;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 6px 12px;
+    columns: var(--secondary-color);
+    position: absolute;
+    top:-10px;
+    left: calc(100% + 25px);
+    white-space: nowrap;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+.collapsed .nav-tooltip{
+    display: block;
+}
 .collapsed{
     width: 76px;
+}
+
+/* responsive on large screen */
+@media (max-width: 1024px){
+    aside{
+        margin: 13px;
+        width: calc(100% - 26px);
+    }
+    aside header{
+        background-color: red;
+        border-radius: 16px;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background-color: var(--secondary-color);
+        padding: 8px 10px;
+    }
+    aside .logo{
+        width: 40px;
+        height: 40px;
+    }
+    aside nav ul{
+        padding: 0 10px;
+    }
+    aside nav ul li a{
+        gap: 10px;
+        padding: 10px;
+        font-size: 0.94rem;
+    }
 }
