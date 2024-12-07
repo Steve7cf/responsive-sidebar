@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="stephan bazaar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="stephan bazaar" />
     <title>Custom Web Components</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>                 
-    <nav>
-        <div class="logo"><h3>darkCoder <img src="assets/code.svg" alt=""></h3></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-        <div>
-            <button>signup</button>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icons -->
+     <link rel="stylesheet" href="assets/icons/css/all.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <i class="fa fa-code"></i>
+          </a>
         </div>
-    </nav>
-</header>
-<main>
-    <div class="hero--intro">
-        <h1>Where Innovation Arise</h1>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-             Soluta culpa voluptatem odio quasi, quis tempora molesti
-             ae ipsa at recusandae? Laboriosam cupiditate quam cum cor
-             rupti distinctio excepturi saepe labore dignissimos voluptatibus.
-        </p>
-        <button>Get started</button>
-    </div>
-    <div class="hero--img">
-        <img src="assets/hero-image.jpg" alt="hero image">
-    </div>
-</main>
-<footer>
-    footer goes here
-</footer>
+        <button class="toggler">
+          <span class="toggler-btn"><i class="fa fa-arrow-left btn-icon"></i></span>
+        </button>
+      </header>
+
+      <!-- nav -->
+       <nav>
+        <ul class="primary-nav">
+          <li>
+            <a href="#">
+              <span><i class="fa fa-compass"></i></span>
+              <span class="nav-label">Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-calendar"></i></span>
+              <span class="nav-label">Tasks</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-database"></i></span>
+              <span class="nav-label">Database</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-server"></i></span>
+              <span class="nav-label">Server</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-users"></i></span>
+              <span class="nav-label">Moderator</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-user"></i></span>
+              <span class="nav-label">Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span><i class="fa fa-tasks"></i></span>
+              <span class="nav-label">Logs</span>
+            </a>
+          </li>
+        </ul>
+
+       <!-- nav -->
+          <ul class="secondary--nav">
+            <li>
+              <a href="#">
+                <span><i class="fa fa-gear"></i></span>
+                <span class="nav-label">Settings</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span><i class="fa fa-sign-out"></i></span>
+                <span class="nav-label">Logout</span>
+              </a>
+            </li>
+          </ul>
+          </nav>
+    </aside>
+    <script defer src="assets/icons/js/all.js"></script>
     <script defer src="main.js"></script>
-</body>
+  </body>
 </html>
